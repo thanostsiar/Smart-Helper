@@ -10,6 +10,7 @@ using System.Windows.Forms;
 
 namespace smart_helper_
 {
+    String sapitis;
     public partial class Form3 : Form
     {
         public Form3()
