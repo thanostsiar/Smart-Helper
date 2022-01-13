@@ -88,6 +88,12 @@
     <Compile Include="Form7.Designer.cs">
       <DependentUpon>Form7.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form8.Designer.cs">
+      <DependentUpon>Form8.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -110,6 +116,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form7.resx">
       <DependentUpon>Form7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form8.resx">
+      <DependentUpon>Form8.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -157,6 +166,51 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pet_feeder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\shoebox.jfif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casual.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casual1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casual2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\casual3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formal.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\athletic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formal1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formal2.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formal3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\athletic1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\athletic2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\athletic3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rainy.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
