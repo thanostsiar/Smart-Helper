@@ -23,6 +23,11 @@ namespace smart_helper_
             label8.Text = username;
         }
 
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            button1.BackgroundImage = Properties.Resources.back;
+        }
+
         private void Form2_MouseHover(object sender, EventArgs e)
         {
             label2.Visible = false;
@@ -90,6 +95,13 @@ namespace smart_helper_
             Form7 form7 = new Form7();
             form7.Show();
             this.Hide();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 frm = new Form1();
+            frm.Show();
         }
     }
 }

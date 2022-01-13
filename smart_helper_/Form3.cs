@@ -23,5 +23,22 @@ namespace smart_helper_
             Form8 form8 = new Form8(selection);
             form8.Show();
         }
+
+        private void pictureBox1_MouseHover(object sender, EventArgs e)
+        {
+            label2.Visible = true;
+        }
+
+        private void Form3_MouseHover(object sender, EventArgs e)
+        {
+            label2.Visible = false;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Ah that smells nice!");
+        }
+
+        
     }
 }
