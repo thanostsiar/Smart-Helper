@@ -61,30 +61,35 @@ namespace smart_helper_
         {
             Form3 form3 = new Form3();
             form3.Show();
+            this.Hide();
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Form4 form4 = new Form4();
             form4.Show();
+            this.Hide();
         }
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             Form5 form5 = new Form5();
             form5.Show();
+            this.Hide();
         }
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             Form6 form6 = new Form6();
             form6.Show();
+            this.Hide();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
             Form7 form7 = new Form7();
             form7.Show();
+            this.Hide();
         }
     }
 }

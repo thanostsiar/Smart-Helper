@@ -17,5 +17,11 @@ namespace smart_helper_
             InitializeComponent();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String selection = comboBox1.Text;
+            Form8 form8 = new Form8(selection);
+            form8.Show();
+        }
     }
 }
