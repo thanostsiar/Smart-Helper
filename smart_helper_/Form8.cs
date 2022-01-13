@@ -124,5 +124,12 @@ namespace smart_helper_
                 MessageBox.Show("Your shoebox is empty!!!");
             }
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            Form3 frm = new Form3();
+            this.Close();
+            frm.Show();
+        }
     }
 }

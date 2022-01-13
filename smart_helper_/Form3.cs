@@ -22,6 +22,7 @@ namespace smart_helper_
             String selection = comboBox1.Text;
             Form8 form8 = new Form8(selection);
             form8.Show();
+            this.Hide();
         }
 
         private void pictureBox1_MouseHover(object sender, EventArgs e)
@@ -39,6 +40,11 @@ namespace smart_helper_
             MessageBox.Show("Ah that smells nice!");
         }
 
-        
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form2 frm = new Form2();
+            this.Close();
+            frm.Show();
+        }
     }
 }
