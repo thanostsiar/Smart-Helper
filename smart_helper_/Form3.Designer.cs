@@ -46,18 +46,20 @@ namespace smart_helper_
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.comboBox1);
-            this.panel1.Location = new System.Drawing.Point(364, 121);
+            this.panel1.Location = new System.Drawing.Point(273, 98);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(367, 560);
+            this.panel1.Size = new System.Drawing.Size(275, 455);
             this.panel1.TabIndex = 0;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.CausesValidation = false;
-            this.button1.Location = new System.Drawing.Point(129, 310);
+            this.button1.Location = new System.Drawing.Point(97, 252);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(116, 46);
+            this.button1.Size = new System.Drawing.Size(87, 37);
             this.button1.TabIndex = 2;
             this.button1.Text = "Submit";
             this.button1.UseVisualStyleBackColor = false;
@@ -67,9 +69,10 @@ namespace smart_helper_
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(50, 140);
+            this.label1.Location = new System.Drawing.Point(38, 114);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(287, 36);
+            this.label1.Size = new System.Drawing.Size(233, 28);
             this.label1.TabIndex = 1;
             this.label1.Text = "Choose your plan!";
             // 
@@ -82,18 +85,20 @@ namespace smart_helper_
             "Formal",
             "Athletic",
             "Rainy Day"});
-            this.comboBox1.Location = new System.Drawing.Point(72, 219);
+            this.comboBox1.Location = new System.Drawing.Point(54, 178);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(231, 31);
+            this.comboBox1.Size = new System.Drawing.Size(174, 27);
             this.comboBox1.TabIndex = 0;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::smart_helper_.Properties.Resources.spray_removebg_preview;
-            this.pictureBox1.Location = new System.Drawing.Point(481, 2);
+            this.pictureBox1.Location = new System.Drawing.Point(361, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(150, 119);
+            this.pictureBox1.Size = new System.Drawing.Size(112, 97);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -104,9 +109,10 @@ namespace smart_helper_
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Consolas", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.Location = new System.Drawing.Point(637, 37);
+            this.label2.Location = new System.Drawing.Point(478, 30);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(159, 36);
+            this.label2.Size = new System.Drawing.Size(129, 28);
             this.label2.TabIndex = 3;
             this.label2.Text = "Press me!";
             this.label2.Visible = false;
@@ -116,23 +122,26 @@ namespace smart_helper_
             this.button2.BackColor = System.Drawing.Color.BlueViolet;
             this.button2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.button2.Location = new System.Drawing.Point(1, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 49);
+            this.button2.Size = new System.Drawing.Size(64, 40);
             this.button2.TabIndex = 14;
             this.button2.Text = "Back";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form3
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::smart_helper_.Properties.Resources.shoebox;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1094, 681);
+            this.ClientSize = new System.Drawing.Size(820, 553);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.panel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Shoebox";
