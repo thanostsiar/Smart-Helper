@@ -17,10 +17,11 @@ namespace smart_helper_
             InitializeComponent();
         }
 
-        public Form8(String selection)
+        public Form8(String selection, String username)
         {
             InitializeComponent();
             this.Text = selection;
+            userToolStripMenuItem.Text = username;
         }
 
         // Method that gets called after a pair of shoes has been clicked and shows his choise.
@@ -130,6 +131,25 @@ namespace smart_helper_
             Form3 frm = new Form3();
             this.Close();
             frm.Show();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            Form3 form3 = new Form3(userToolStripMenuItem.Text);
+            form3.Show();
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

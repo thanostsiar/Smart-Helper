@@ -38,5 +38,10 @@ namespace smart_helper_
         {
             Application.Exit();
         }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

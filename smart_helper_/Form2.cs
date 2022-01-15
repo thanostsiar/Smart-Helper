@@ -21,50 +21,12 @@ namespace smart_helper_
         {
             InitializeComponent();
             label8.Text = username;
-        }
-
-        private void Form2_Load(object sender, EventArgs e)
-        {
-            button1.BackgroundImage = Properties.Resources.back;
-        }
-
-        private void Form2_MouseHover(object sender, EventArgs e)
-        {
-            label2.Visible = false;
-            label3.Visible = false;
-            label4.Visible = false;
-            label5.Visible = false;
-            label6.Visible = false;
-        }
-
-        private void pictureBox1_MouseHover(object sender, EventArgs e)
-        {
-            label2.Visible = true;
-        }
-
-        private void pictureBox2_MouseHover(object sender, EventArgs e)
-        {
-            label3.Visible = true;
-        }
-
-        private void pictureBox3_MouseHover(object sender, EventArgs e)
-        {
-            label4.Visible = true;
-        }
-
-        private void pictureBox4_MouseHover(object sender, EventArgs e)
-        {
-            label5.Visible = true;
-        }
-
-        private void pictureBox5_MouseHover(object sender, EventArgs e)
-        {
-            label6.Visible = true;
+            userToolStripMenuItem.Text = label8.Text;
         }
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            Form3 form3 = new Form3(label8.Text);
             form3.Show();
             this.Hide();
         }
@@ -103,6 +65,25 @@ namespace smart_helper_
             this.Close();
             frm.Show();
             
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+            Form1 form1 = new Form1();
+            form1.Show();
+        }
+
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
