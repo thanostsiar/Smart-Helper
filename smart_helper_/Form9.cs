@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -64,6 +65,34 @@ namespace smart_helper_
 
 
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Visible)
+            {
+                pictureBox1.Hide();
+                MessageBox.Show("Closing the lights");
+            }
+            else
+            {
+                pictureBox1.Show();
+                MessageBox.Show("Opening the lights");
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (pictureBox2.Visible)
+            {
+                pictureBox2.Visible = false;
+                MessageBox.Show("Timer is deactivated");
+            }
+            else
+            {
+                pictureBox2.Visible = true;
+                MessageBox.Show("Timer is activated");
+            }
         }
     }
 }
