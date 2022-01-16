@@ -32,3 +32,4 @@ C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helpe
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.csproj.CoreCompileInputs.cache
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.exe
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.pdb
+C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.Form9.resources
