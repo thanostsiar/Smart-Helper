@@ -254,10 +254,26 @@
   <ItemGroup>
     <Content Include="kitchen_background.png" />
     <Content Include="Resources\bathroom_background.jpg" />
+    <None Include="Resources\living_room_semi.png" />
+    <None Include="Resources\living_room_little.png" />
+    <None Include="Resources\bathroom_off.png" />
+    <None Include="Resources\bathroom_on.png" />
+    <None Include="Resources\bathroom_little.png" />
+    <None Include="Resources\bathroom_semi.png" />
     <Content Include="Resources\bedroom_background.png" />
+    <None Include="Resources\bedroom_off.png" />
+    <None Include="Resources\bedroom_on.png" />
+    <None Include="Resources\bedroom_little.png" />
+    <None Include="Resources\bedroom_semi.png" />
     <Content Include="Resources\kitchen_background.png" />
     <None Include="Resources\timer.png" />
     <None Include="Resources\lightbulb.png" />
+    <None Include="Resources\lights_off.png" />
+    <None Include="Resources\lights_on.png" />
+    <None Include="Resources\kitchen_off.png" />
+    <None Include="Resources\kitchen_on.png" />
+    <None Include="Resources\kitchen_little.png" />
+    <None Include="Resources\kitchen_semi.png" />
     <Content Include="Resources\living_room_background.jpg" />
     <None Include="Resources\rooms_background.png" />
   </ItemGroup>

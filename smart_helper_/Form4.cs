@@ -73,5 +73,12 @@ namespace smart_helper_
             form9.Show();
             this.Hide();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 form2 = new Form2(userToolStripMenuItem.Text);
+            form2.Show();
+        }
     }
 }

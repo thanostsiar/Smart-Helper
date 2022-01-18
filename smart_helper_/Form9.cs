@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Drawing.Imaging;
 
 namespace smart_helper_
 {
@@ -24,6 +25,7 @@ namespace smart_helper_
             this.Text = selection;
             userToolStripMenuItem.Text = username;
         }
+
 
         private void eToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -48,23 +50,20 @@ namespace smart_helper_
         {
             if (this.Text.Equals("Living Room"))
             {
-                panel1.BackgroundImage = Properties.Resources.living_room_background;
+                panel1.BackgroundImage = Properties.Resources.lights_off;
             }
             else if (this.Text.Equals("Kitchen"))
             {
-                panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                panel1.BackgroundImage = Properties.Resources.kitchen_off;
             }
             else if (this.Text.Equals("Bedroom"))
             {
-                panel1.BackgroundImage = Properties.Resources.bedroom_background;
+                panel1.BackgroundImage = Properties.Resources.bedroom_off;
             }
             else
             {
-                panel1.BackgroundImage = Properties.Resources.bathroom_background;
+                panel1.BackgroundImage = Properties.Resources.bathroom_off;
             }
-
-
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -72,12 +71,106 @@ namespace smart_helper_
             if (pictureBox1.Visible)
             {
                 pictureBox1.Hide();
-                MessageBox.Show("Closing the lights");
+
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.lights_off;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_off;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_off;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_off;
+                }
             }
             else
             {
                 pictureBox1.Show();
-                MessageBox.Show("Opening the lights");
+
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.living_room_background;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_background;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_background;
+                }
+            }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Bitmap bitmap;
+            Color c;
+            int A, R, G, B;
+            int width, height;
+
+            // Creating a Bitmap instance of the panel's background image.
+
+            if (this.Text.Equals("Living Room"))
+            {
+                bitmap = new Bitmap(Properties.Resources.living_room_background);
+                width = bitmap.Width;
+                height = bitmap.Height;
+
+            }
+            else if (this.Text.Equals("Kitchen"))
+            {
+                bitmap = new Bitmap(Properties.Resources.kitchen_background);
+                width = bitmap.Width;
+                height = bitmap.Height;
+            }
+            else if (this.Text.Equals("Bedroom"))
+            {
+                bitmap = new Bitmap(Properties.Resources.bedroom_background);
+                width = bitmap.Width;
+                height = bitmap.Height; ;
+            }
+            else
+            {
+                bitmap = new Bitmap(Properties.Resources.bathroom_background);
+                width = bitmap.Width;
+                height = bitmap.Height;
+            }
+
+            // Creating the new color using the old image's arbg, accoeding to the user's choice of color. 
+
+            if (colorDialog1.ShowDialog() == DialogResult.OK)
+            {
+                A = colorDialog1.Color.A;
+                R = colorDialog1.Color.R;
+                G = colorDialog1.Color.G;
+                B = colorDialog1.Color.B;
+
+                for (int y = 0; y < height; y++)
+                {
+                    for (int x = 0; x < width; x++)
+                    {
+                        c = bitmap.GetPixel(x, y);
+
+                        int a = (int)(c.A + (1 - c.A / 255.0) * A);
+                        int r = (int)(c.R + (1 - c.R / 255.0) * R);
+                        int g = (int)(c.G + (1 - c.G / 255.0) * G);
+                        int b = (int)(c.B + (1 - c.B / 255.0) * B);
+
+                        bitmap.SetPixel(x, y, Color.FromArgb(a, r, g, b));
+                    }
+                }
+                panel1.BackgroundImage = bitmap;
+                pictureBox3.BackColor = colorDialog1.Color;
             }
         }
 
@@ -92,6 +185,97 @@ namespace smart_helper_
             {
                 pictureBox2.Visible = true;
                 MessageBox.Show("Timer is activated");
+            }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form4 form4 = new Form4(userToolStripMenuItem.Text);
+            form4.Show();
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            if (this.Text.Equals("Living Room"))
+            {
+                switch (trackBar1.Value)
+                {
+                    case 0:
+                        panel1.BackgroundImage = Properties.Resources.lights_off;
+                        break;
+                    case 1:
+                        panel1.BackgroundImage = Properties.Resources.living_room_little;
+                        break;
+                    case 2:
+                        panel1.BackgroundImage = Properties.Resources.living_room_semi;
+                        break;
+                    case 3:
+                        panel1.BackgroundImage = Properties.Resources.living_room_background;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else if (this.Text.Equals("Kitchen"))
+            {
+                switch (trackBar1.Value)
+                {
+                    case 0:
+                        panel1.BackgroundImage = Properties.Resources.kitchen_off;
+                        break;
+                    case 1:
+                        panel1.BackgroundImage = Properties.Resources.kitchen_little;
+                        break;
+                    case 2:
+                        panel1.BackgroundImage = Properties.Resources.kitchen_semi;
+                        break;
+                    case 3:
+                        panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else if (this.Text.Equals("Bedroom"))
+            {
+                switch (trackBar1.Value)
+                {
+                    case 0:
+                        panel1.BackgroundImage = Properties.Resources.bedroom_off;
+                        break;
+                    case 1:
+                        panel1.BackgroundImage = Properties.Resources.bedroom_little;
+                        break;
+                    case 2:
+                        panel1.BackgroundImage = Properties.Resources.bedroom_semi;
+                        break;
+                    case 3:
+                        panel1.BackgroundImage = Properties.Resources.bedroom_background;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                switch (trackBar1.Value)
+                {
+                    case 0:
+                        panel1.BackgroundImage = Properties.Resources.bathroom_off;
+                        break;
+                    case 1:
+                        panel1.BackgroundImage = Properties.Resources.bathroom_little;
+                        break;
+                    case 2:
+                        panel1.BackgroundImage = Properties.Resources.bathroom_semi;
+                        break;
+                    case 3:
+                        panel1.BackgroundImage = Properties.Resources.bathroom_background;
+                        break;
+                    default:
+                        break;
+                }
             }
         }
     }
