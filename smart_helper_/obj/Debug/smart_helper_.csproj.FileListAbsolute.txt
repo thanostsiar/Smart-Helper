@@ -52,3 +52,4 @@ C:\Users\thana\Documents\GitHub\Smart-Helper\smart_helper_\obj\Debug\smart_helpe
 C:\Users\thana\Documents\GitHub\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.exe
 C:\Users\thana\Documents\GitHub\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.pdb
 C:\Users\thana\Dropbox\C#\repos\smart_helper_\obj\Debug\smart_helper_.Form9.resources
+C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.Form10.resources
