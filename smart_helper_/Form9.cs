@@ -278,5 +278,51 @@ namespace smart_helper_
                 }
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Visible)
+            {
+                pictureBox1.Hide();
+
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.lights_off;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_off;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_off;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_off;
+                }
+            }
+            else
+            {
+                pictureBox1.Show();
+
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.living_room_background;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_background;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_background;
+                }
+            }
+        }
     }
 }

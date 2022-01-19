@@ -343,6 +343,26 @@ namespace smart_helper_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap heat_rooms_background {
+            get {
+                object obj = ResourceManager.GetObject("heat_rooms_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap heating_background {
+            get {
+                object obj = ResourceManager.GetObject("heating_background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap jordan1 {
             get {
                 object obj = ResourceManager.GetObject("jordan1", resourceCulture);
