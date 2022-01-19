@@ -14,16 +14,19 @@ namespace smart_helper_
 {
     public partial class Form9 : Form
     {
+        public bool all_lights;
+
         public Form9()
         {
             InitializeComponent();
         }
 
-        public Form9(String selection, String username)
+        public Form9(String selection, String username,Form4 form4)
         {
             InitializeComponent();
             this.Text = selection;
             userToolStripMenuItem.Text = username;
+            all_lights = form4.all_lights;
         }
 
 
@@ -48,22 +51,47 @@ namespace smart_helper_
 
         private void Form9_Load(object sender, EventArgs e)
         {
-            if (this.Text.Equals("Living Room"))
+            if (all_lights==false)
             {
-                panel1.BackgroundImage = Properties.Resources.lights_off;
+                pictureBox1.Hide();
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.lights_off;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_off;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_off;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_off;
+                }
             }
-            else if (this.Text.Equals("Kitchen"))
+            else if (all_lights)
             {
-                panel1.BackgroundImage = Properties.Resources.kitchen_off;
+                pictureBox1.Show();
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.living_room_background;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_background;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_background;
+                }
             }
-            else if (this.Text.Equals("Bedroom"))
-            {
-                panel1.BackgroundImage = Properties.Resources.bedroom_off;
-            }
-            else
-            {
-                panel1.BackgroundImage = Properties.Resources.bathroom_off;
-            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -191,7 +219,7 @@ namespace smart_helper_
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form4 form4 = new Form4(userToolStripMenuItem.Text);
+            Form4 form4 = new Form4(userToolStripMenuItem.Text,this);
             form4.Show();
         }
 
@@ -284,6 +312,7 @@ namespace smart_helper_
             if (pictureBox1.Visible)
             {
                 pictureBox1.Hide();
+                all_lights = false;
 
                 if (this.Text.Equals("Living Room"))
                 {
@@ -305,6 +334,7 @@ namespace smart_helper_
             else
             {
                 pictureBox1.Show();
+                all_lights = true;
 
                 if (this.Text.Equals("Living Room"))
                 {
@@ -324,5 +354,12 @@ namespace smart_helper_
                 }
             }
         }
+
+        
+
+
+
+
+
     }
 }
