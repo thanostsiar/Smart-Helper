@@ -12,16 +12,24 @@ namespace smart_helper_
 {
     public partial class Form4 : Form
     {
+        public bool all_lights;
+
         public Form4()
         {
             InitializeComponent();
         }
-
         public Form4(String username)
         {
             InitializeComponent();
             userToolStripMenuItem.Text = username;
         }
+        public Form4(String username,Form9 form9)
+        {
+            InitializeComponent();
+            userToolStripMenuItem.Text = username;
+            all_lights = form9.all_lights;
+        }
+        
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -45,7 +53,7 @@ namespace smart_helper_
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             String selection = toolTip1.GetToolTip(pictureBox1);
-            Form9 form9 = new Form9(selection, userToolStripMenuItem.Text);
+            Form9 form9 = new Form9(selection, userToolStripMenuItem.Text,this);
             form9.Show();
             this.Hide();
         }
@@ -53,7 +61,7 @@ namespace smart_helper_
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             String selection = toolTip1.GetToolTip(pictureBox2);
-            Form9 form9 = new Form9(selection, userToolStripMenuItem.Text);
+            Form9 form9 = new Form9(selection, userToolStripMenuItem.Text,this);
             form9.Show();
             this.Hide();
         }
@@ -61,7 +69,7 @@ namespace smart_helper_
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             String selection = toolTip1.GetToolTip(pictureBox3);
-            Form9 form9 = new Form9(selection, userToolStripMenuItem.Text);
+            Form9 form9 = new Form9(selection, userToolStripMenuItem.Text,this);
             form9.Show();
             this.Hide();
         }
@@ -69,7 +77,7 @@ namespace smart_helper_
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             String selection = toolTip1.GetToolTip(pictureBox4);
-            Form9 form9 = new Form9(selection, userToolStripMenuItem.Text);
+            Form9 form9 = new Form9(selection, userToolStripMenuItem.Text,this);
             form9.Show();
             this.Hide();
         }
