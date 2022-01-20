@@ -12,6 +12,8 @@ namespace smart_helper_
 {
     public partial class Form10 : Form
     {
+        public bool all_lights;
+        int seconds, minutes, hours;
         public Form10()
         {
             InitializeComponent();
@@ -68,6 +70,206 @@ namespace smart_helper_
             {
                 panel1.BackgroundImage = Properties.Resources.bathroom_background;
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Visible)
+            {
+                pictureBox1.Hide();
+
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.living_room_background;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_background;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_background;
+                }
+            }
+            else
+            {
+                pictureBox1.Show();
+
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.living_room_warm;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_warm;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_warm;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_warm;
+                }
+            }
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            seconds--;
+
+            if (seconds == 0)
+            {
+                if (minutes != 0)
+                {
+                    seconds = 59;
+                    minutes--;
+
+                    if (minutes == 0)
+                    {
+                        if (hours != 0)
+                        {
+                            minutes = 59;
+                            hours--;
+                        }
+                        else if (hours == 0 && seconds == 0)
+                        {
+                            timer1.Enabled = false;
+                            pictureBox2.Hide();
+                            seconds = 0;
+                            minutes = 0;
+                            button1_Click(sender, e);
+                        }
+                    }
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                    pictureBox2.Hide();
+                    seconds = 0;
+                    button1_Click(sender, e);
+                }
+            }
+
+            label6.Text = hours.ToString();
+            label8.Text = minutes.ToString();
+            label10.Text = seconds.ToString();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            label6.Text = "0";
+            label8.Text = "0";
+            label10.Text = "0";
+
+            timer1.Enabled = false;
+            pictureBox2.Hide();
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            if (this.Text.Equals("Living Room"))
+            {
+                switch (trackBar1.Value)
+                {
+                    case 0:
+                        panel1.BackgroundImage = Properties.Resources.living_room_background;
+                        break;
+                    case 1:
+                        panel1.BackgroundImage = Properties.Resources.living_room_little_warm;
+                        break;
+                    case 2:
+                        panel1.BackgroundImage = Properties.Resources.living_room_semi_warm;
+                        break;
+                    case 3:
+                        panel1.BackgroundImage = Properties.Resources.living_room_warm;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else if (this.Text.Equals("Kitchen"))
+            {
+                switch (trackBar1.Value)
+                {
+                    case 0:
+                        panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                        break;
+                    case 1:
+                        panel1.BackgroundImage = Properties.Resources.kitchen_little_warm;
+                        break;
+                    case 2:
+                        panel1.BackgroundImage = Properties.Resources.kitchen_semi_warm;
+                        break;
+                    case 3:
+                        panel1.BackgroundImage = Properties.Resources.kitchen_warm;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else if (this.Text.Equals("Bedroom"))
+            {
+                switch (trackBar1.Value)
+                {
+                    case 0:
+                        panel1.BackgroundImage = Properties.Resources.bedroom_background;
+                        break;
+                    case 1:
+                        panel1.BackgroundImage = Properties.Resources.bedroom_little_warm;
+                        break;
+                    case 2:
+                        panel1.BackgroundImage = Properties.Resources.bedroom_semi_warm;
+                        break;
+                    case 3:
+                        panel1.BackgroundImage = Properties.Resources.bedroom_warm;
+                        break;
+                    default:
+                        break;
+                }
+            }
+            else
+            {
+                switch (trackBar1.Value)
+                {
+                    case 0:
+                        panel1.BackgroundImage = Properties.Resources.bathroom_background;
+                        break;
+                    case 1:
+                        panel1.BackgroundImage = Properties.Resources.bathroom_little_warm;
+                        break;
+                    case 2:
+                        panel1.BackgroundImage = Properties.Resources.bathroom_semi_warm;
+                        break;
+                    case 3:
+                        panel1.BackgroundImage = Properties.Resources.bathroom_warm;
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (timer1.Enabled)
+            {
+                timer1.Enabled = false;
+                pictureBox2.Hide();
+            }
+            else
+            {
+                timer1.Enabled = true;
+                pictureBox2.Show();
+            }
+
+            seconds = Int32.Parse(comboBox3.Text);
+            minutes = Int32.Parse(comboBox2.Text);
+            hours = Int32.Parse(comboBox1.Text);
         }
     }
 }

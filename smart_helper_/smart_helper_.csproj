@@ -285,6 +285,9 @@
     <None Include="Resources\kitchen_on.png" />
     <None Include="Resources\kitchen_little.png" />
     <None Include="Resources\kitchen_semi.png" />
+    <None Include="Resources\kitchen_little_warm1.png" />
+    <None Include="Resources\kitchen_semi_warm1.png" />
+    <None Include="Resources\kitchen_warm1.png" />
     <Content Include="Resources\living_room_background.jpg" />
     <None Include="Resources\rooms_background.png" />
   </ItemGroup>

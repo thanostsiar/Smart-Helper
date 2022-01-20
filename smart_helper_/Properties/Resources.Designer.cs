@@ -143,6 +143,16 @@ namespace smart_helper_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bathroom_little_warm {
+            get {
+                object obj = ResourceManager.GetObject("bathroom_little_warm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bathroom_off {
             get {
                 object obj = ResourceManager.GetObject("bathroom_off", resourceCulture);
@@ -166,6 +176,26 @@ namespace smart_helper_.Properties {
         internal static System.Drawing.Bitmap bathroom_semi {
             get {
                 object obj = ResourceManager.GetObject("bathroom_semi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bathroom_semi_warm {
+            get {
+                object obj = ResourceManager.GetObject("bathroom_semi_warm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bathroom_warm {
+            get {
+                object obj = ResourceManager.GetObject("bathroom_warm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -203,6 +233,16 @@ namespace smart_helper_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bedroom_little_warm {
+            get {
+                object obj = ResourceManager.GetObject("bedroom_little_warm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bedroom_off {
             get {
                 object obj = ResourceManager.GetObject("bedroom_off", resourceCulture);
@@ -226,6 +266,26 @@ namespace smart_helper_.Properties {
         internal static System.Drawing.Bitmap bedroom_semi {
             get {
                 object obj = ResourceManager.GetObject("bedroom_semi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bedroom_semi_warm {
+            get {
+                object obj = ResourceManager.GetObject("bedroom_semi_warm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bedroom_warm {
+            get {
+                object obj = ResourceManager.GetObject("bedroom_warm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -403,6 +463,16 @@ namespace smart_helper_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap kitchen_little_warm {
+            get {
+                object obj = ResourceManager.GetObject("kitchen_little_warm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kitchen_off {
             get {
                 object obj = ResourceManager.GetObject("kitchen_off", resourceCulture);
@@ -426,6 +496,26 @@ namespace smart_helper_.Properties {
         internal static System.Drawing.Bitmap kitchen_semi {
             get {
                 object obj = ResourceManager.GetObject("kitchen_semi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kitchen_semi_warm {
+            get {
+                object obj = ResourceManager.GetObject("kitchen_semi_warm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kitchen_warm {
+            get {
+                object obj = ResourceManager.GetObject("kitchen_warm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -503,9 +593,39 @@ namespace smart_helper_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap living_room_little_warm {
+            get {
+                object obj = ResourceManager.GetObject("living_room_little_warm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap living_room_semi {
             get {
                 object obj = ResourceManager.GetObject("living_room_semi", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap living_room_semi_warm {
+            get {
+                object obj = ResourceManager.GetObject("living_room_semi_warm", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap living_room_warm {
+            get {
+                object obj = ResourceManager.GetObject("living_room_warm", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

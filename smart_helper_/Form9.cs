@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +14,7 @@ namespace smart_helper_
     public partial class Form9 : Form
     {
         public bool all_lights;
+        int seconds, minutes, hours;
 
         public Form9()
         {
@@ -91,7 +91,6 @@ namespace smart_helper_
                     panel1.BackgroundImage = Properties.Resources.bathroom_background;
                 }
             }
-            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -174,7 +173,7 @@ namespace smart_helper_
                 height = bitmap.Height;
             }
 
-            // Creating the new color using the old image's arbg, accoeding to the user's choice of color. 
+            // Creating the new color using the old image's arbg, according to the user's choice of color. 
 
             if (colorDialog1.ShowDialog() == DialogResult.OK)
             {
@@ -204,16 +203,21 @@ namespace smart_helper_
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (pictureBox2.Visible)
+            if (timer1.Enabled)
             {
-                pictureBox2.Visible = false;
-                MessageBox.Show("Timer is deactivated");
+                timer1.Enabled = false;
+                pictureBox2.Hide();
             }
             else
             {
-                pictureBox2.Visible = true;
-                MessageBox.Show("Timer is activated");
+                timer1.Enabled = true;
+                pictureBox2.Show();
             }
+
+            seconds = Int32.Parse(comboBox3.Text);
+            minutes = Int32.Parse(comboBox2.Text);
+            hours = Int32.Parse(comboBox1.Text);
+
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -307,6 +311,16 @@ namespace smart_helper_
             }
         }
 
+        private void button6_Click(object sender, EventArgs e)
+        {
+            label6.Text = "0";
+            label8.Text = "0";
+            label10.Text = "0";
+
+            timer1.Enabled = false;
+            pictureBox2.Hide();
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             if (pictureBox1.Visible)
@@ -355,11 +369,46 @@ namespace smart_helper_
             }
         }
 
-        
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            seconds--;
 
+            if (seconds == 0)
+            {
+                if (minutes != 0)
+                {
+                    seconds = 59;
+                    minutes--;
 
+                    if (minutes == 0)
+                    {
+                        if (hours != 0)
+                        {
+                            minutes = 59;
+                            hours--;
+                        }
+                        else if (hours == 0 && seconds == 0)
+                        {
+                            timer1.Enabled = false;
+                            pictureBox2.Hide();
+                            seconds = 0;
+                            minutes = 0;
+                            button1_Click(sender, e);
+                        }
+                    }
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                    pictureBox2.Hide();
+                    seconds = 0;
+                    button1_Click(sender, e);
+                }
+            }
 
-
-
+            label6.Text = hours.ToString();
+            label8.Text = minutes.ToString();
+            label10.Text = seconds.ToString();
+        }
     }
 }
