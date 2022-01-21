@@ -12,15 +12,22 @@ namespace smart_helper_
 {
     public partial class Form5 : Form
     {
+        public bool all_heat;
+
         public Form5()
         {
             InitializeComponent();
         }
-
         public Form5(String username)
         {
             InitializeComponent();
             userToolStripMenuItem.Text = username;
+        }
+        public Form5(String username,Form10 form10)
+        {
+            InitializeComponent();
+            userToolStripMenuItem.Text = username;
+            all_heat = form10.all_heat;
         }
 
 
@@ -53,7 +60,7 @@ namespace smart_helper_
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             String selection = toolTip1.GetToolTip(pictureBox1);
-            Form10 form10 = new Form10(selection, userToolStripMenuItem.Text);
+            Form10 form10 = new Form10(selection, userToolStripMenuItem.Text,this);
             form10.Show();
             this.Hide();
         }
@@ -61,7 +68,7 @@ namespace smart_helper_
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             String selection = toolTip1.GetToolTip(pictureBox2);
-            Form10 form10 = new Form10(selection, userToolStripMenuItem.Text);
+            Form10 form10 = new Form10(selection, userToolStripMenuItem.Text,this);
             form10.Show();
             this.Hide();
         }
@@ -69,7 +76,7 @@ namespace smart_helper_
         private void pictureBox3_Click(object sender, EventArgs e)
         {
             String selection = toolTip1.GetToolTip(pictureBox3);
-            Form10 form10 = new Form10(selection, userToolStripMenuItem.Text);
+            Form10 form10 = new Form10(selection, userToolStripMenuItem.Text,this);
             form10.Show();
             this.Hide();
         }
@@ -77,7 +84,7 @@ namespace smart_helper_
         private void pictureBox4_Click(object sender, EventArgs e)
         {
             String selection = toolTip1.GetToolTip(pictureBox4);
-            Form10 form10 = new Form10(selection, userToolStripMenuItem.Text);
+            Form10 form10 = new Form10(selection, userToolStripMenuItem.Text,this);
             form10.Show();
             this.Hide();
         }
