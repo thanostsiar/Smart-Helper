@@ -12,18 +12,19 @@ namespace smart_helper_
 {
     public partial class Form10 : Form
     {
-        public bool all_lights;
+        public bool all_heat;
         int seconds, minutes, hours;
         public Form10()
         {
             InitializeComponent();
         }
 
-        public Form10(String selection, String username)
+        public Form10(String selection, String username,Form5 form5)
         {
             InitializeComponent();
             this.Text = selection;
             userToolStripMenuItem.Text = username;
+            all_heat = form5.all_heat;
         }
 
         private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
@@ -48,28 +49,53 @@ namespace smart_helper_
         private void button4_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form5 form5 = new Form5(userToolStripMenuItem.Text);
+            Form5 form5 = new Form5(userToolStripMenuItem.Text,this);
             form5.Show();
         }
 
         private void Form10_Load(object sender, EventArgs e)
         {
-            if (this.Text.Equals("Living Room"))
+            if (all_heat == false)
             {
-                panel1.BackgroundImage = Properties.Resources.living_room_background;
+                pictureBox1.Hide();
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.living_room_background;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_background;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_background;
+                }
             }
-            else if (this.Text.Equals("Kitchen"))
+            else if(all_heat)
             {
-                panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                pictureBox1.Show();
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.living_room_warm;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_warm;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_warm;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_warm;
+                }
             }
-            else if (this.Text.Equals("Bedroom"))
-            {
-                panel1.BackgroundImage = Properties.Resources.bedroom_background;
-            }
-            else
-            {
-                panel1.BackgroundImage = Properties.Resources.bathroom_background;
-            }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -168,6 +194,54 @@ namespace smart_helper_
 
             timer1.Enabled = false;
             pictureBox2.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            if (pictureBox1.Visible)
+            {
+                pictureBox1.Hide();
+                all_heat = false;
+
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.living_room_background;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_background;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_background;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_background;
+                }
+            }
+            else
+            {
+                pictureBox1.Show();
+                all_heat = true;
+
+                if (this.Text.Equals("Living Room"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.living_room_warm;
+                }
+                else if (this.Text.Equals("Kitchen"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.kitchen_warm;
+                }
+                else if (this.Text.Equals("Bedroom"))
+                {
+                    panel1.BackgroundImage = Properties.Resources.bedroom_warm;
+                }
+                else
+                {
+                    panel1.BackgroundImage = Properties.Resources.bathroom_warm;
+                }
+            }
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)

@@ -81,8 +81,8 @@
             this.exitToolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Padding = new System.Windows.Forms.Padding(5, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1154, 30);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 2, 0, 2);
+            this.menuStrip1.Size = new System.Drawing.Size(866, 26);
             this.menuStrip1.TabIndex = 18;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -90,7 +90,7 @@
             // 
             this.exitToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(104, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(84, 22);
             this.exitToolStripMenuItem.Text = "Sign out";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -99,20 +99,20 @@
             this.userToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
             this.userToolStripMenuItem.Enabled = false;
             this.userToolStripMenuItem.Name = "userToolStripMenuItem";
-            this.userToolStripMenuItem.Size = new System.Drawing.Size(64, 26);
+            this.userToolStripMenuItem.Size = new System.Drawing.Size(52, 22);
             this.userToolStripMenuItem.Text = "User";
             // 
             // eToolStripMenuItem
             // 
             this.eToolStripMenuItem.Name = "eToolStripMenuItem";
-            this.eToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
+            this.eToolStripMenuItem.Size = new System.Drawing.Size(108, 22);
             this.eToolStripMenuItem.Text = "Exit Lights";
             this.eToolStripMenuItem.Click += new System.EventHandler(this.eToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(64, 26);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(52, 22);
             this.exitToolStripMenuItem1.Text = "Exit";
             this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
@@ -120,19 +120,17 @@
             // 
             this.panel1.BackColor = System.Drawing.SystemColors.Control;
             this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Location = new System.Drawing.Point(0, 90);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.panel1.Location = new System.Drawing.Point(0, 73);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(721, 575);
+            this.panel1.Size = new System.Drawing.Size(541, 467);
             this.panel1.TabIndex = 19;
             // 
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button1.Location = new System.Drawing.Point(817, 63);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Location = new System.Drawing.Point(613, 51);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(211, 42);
+            this.button1.Size = new System.Drawing.Size(158, 34);
             this.button1.TabIndex = 21;
             this.button1.Text = "On/Off";
             this.button1.UseVisualStyleBackColor = true;
@@ -143,10 +141,9 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Consolas", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label1.Location = new System.Drawing.Point(848, 36);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(636, 29);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(131, 23);
+            this.label1.Size = new System.Drawing.Size(108, 19);
             this.label1.TabIndex = 22;
             this.label1.Text = "Room Lights";
             // 
@@ -155,10 +152,9 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Consolas", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label2.Location = new System.Drawing.Point(812, 212);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(609, 172);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(219, 23);
+            this.label2.Size = new System.Drawing.Size(180, 19);
             this.label2.TabIndex = 23;
             this.label2.Text = "Intensity of Lights";
             // 
@@ -166,11 +162,10 @@
             // 
             this.trackBar1.BackColor = System.Drawing.Color.SteelBlue;
             this.trackBar1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.trackBar1.Location = new System.Drawing.Point(817, 256);
-            this.trackBar1.Margin = new System.Windows.Forms.Padding(4);
+            this.trackBar1.Location = new System.Drawing.Point(613, 208);
             this.trackBar1.Maximum = 3;
             this.trackBar1.Name = "trackBar1";
-            this.trackBar1.Size = new System.Drawing.Size(237, 56);
+            this.trackBar1.Size = new System.Drawing.Size(178, 45);
             this.trackBar1.TabIndex = 24;
             this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
@@ -179,20 +174,18 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Consolas", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label3.Location = new System.Drawing.Point(791, 337);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(593, 274);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(252, 23);
+            this.label3.Size = new System.Drawing.Size(207, 19);
             this.label3.TabIndex = 25;
             this.label3.Text = "Change color of lights";
             // 
             // button2
             // 
             this.button2.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button2.Location = new System.Drawing.Point(817, 375);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(613, 305);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(211, 42);
+            this.button2.Size = new System.Drawing.Size(158, 34);
             this.button2.TabIndex = 26;
             this.button2.Text = "Change Color";
             this.button2.UseVisualStyleBackColor = true;
@@ -203,20 +196,18 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Consolas", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label4.Location = new System.Drawing.Point(151, 14);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(113, 11);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(65, 23);
+            this.label4.Size = new System.Drawing.Size(54, 19);
             this.label4.TabIndex = 27;
             this.label4.Text = "Timer";
             // 
             // button3
             // 
             this.button3.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button3.Location = new System.Drawing.Point(29, 116);
-            this.button3.Margin = new System.Windows.Forms.Padding(4);
+            this.button3.Location = new System.Drawing.Point(22, 94);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(207, 42);
+            this.button3.Size = new System.Drawing.Size(155, 34);
             this.button3.TabIndex = 28;
             this.button3.Text = "Activate/Deactivate";
             this.button3.UseVisualStyleBackColor = true;
@@ -228,10 +219,9 @@
             this.pictureBox1.BackgroundImage = global::smart_helper_.Properties.Resources.lightbulb;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::smart_helper_.Properties.Resources.lightbulb;
-            this.pictureBox1.Location = new System.Drawing.Point(729, 100);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox1.Location = new System.Drawing.Point(547, 81);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(49, 43);
+            this.pictureBox1.Size = new System.Drawing.Size(37, 35);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 20;
             this.pictureBox1.TabStop = false;
@@ -242,10 +232,9 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::smart_helper_.Properties.Resources.timer;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(729, 510);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Location = new System.Drawing.Point(547, 414);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(49, 43);
+            this.pictureBox2.Size = new System.Drawing.Size(37, 35);
             this.pictureBox2.TabIndex = 29;
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Visible = false;
@@ -253,10 +242,9 @@
             // pictureBox3
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Location = new System.Drawing.Point(729, 375);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Location = new System.Drawing.Point(547, 305);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(49, 43);
+            this.pictureBox3.Size = new System.Drawing.Size(37, 35);
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
             // 
@@ -266,10 +254,10 @@
             this.button4.BackgroundImage = global::smart_helper_.Properties.Resources.back_final;
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.button4.Location = new System.Drawing.Point(0, 33);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Location = new System.Drawing.Point(0, 27);
+            this.button4.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(57, 57);
+            this.button4.Size = new System.Drawing.Size(43, 46);
             this.button4.TabIndex = 24;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
@@ -283,20 +271,18 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Consolas", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label5.Location = new System.Drawing.Point(848, 119);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(636, 97);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(120, 23);
+            this.label5.Size = new System.Drawing.Size(99, 19);
             this.label5.TabIndex = 32;
             this.label5.Text = "All Lights";
             // 
             // button5
             // 
             this.button5.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button5.Location = new System.Drawing.Point(816, 146);
-            this.button5.Margin = new System.Windows.Forms.Padding(4);
+            this.button5.Location = new System.Drawing.Point(612, 119);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(211, 42);
+            this.button5.Size = new System.Drawing.Size(158, 34);
             this.button5.TabIndex = 31;
             this.button5.Text = "On/Off";
             this.button5.UseVisualStyleBackColor = true;
@@ -316,18 +302,18 @@
             this.panel2.Controls.Add(this.label6);
             this.panel2.Controls.Add(this.button3);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(785, 424);
+            this.panel2.Location = new System.Drawing.Point(589, 344);
+            this.panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(357, 241);
+            this.panel2.Size = new System.Drawing.Size(268, 196);
             this.panel2.TabIndex = 38;
             // 
             // button6
             // 
             this.button6.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button6.Location = new System.Drawing.Point(268, 114);
-            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Location = new System.Drawing.Point(201, 93);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(85, 44);
+            this.button6.Size = new System.Drawing.Size(64, 36);
             this.button6.TabIndex = 38;
             this.button6.Text = "Reset";
             this.button6.UseVisualStyleBackColor = true;
@@ -398,9 +384,10 @@
             "57",
             "58",
             "59"});
-            this.comboBox3.Location = new System.Drawing.Point(241, 68);
+            this.comboBox3.Location = new System.Drawing.Point(181, 55);
+            this.comboBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(43, 28);
+            this.comboBox3.Size = new System.Drawing.Size(40, 25);
             this.comboBox3.TabIndex = 37;
             this.comboBox3.Text = "0";
             // 
@@ -469,9 +456,10 @@
             "57",
             "58",
             "59"});
-            this.comboBox2.Location = new System.Drawing.Point(169, 68);
+            this.comboBox2.Location = new System.Drawing.Point(127, 55);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(43, 28);
+            this.comboBox2.Size = new System.Drawing.Size(40, 25);
             this.comboBox2.TabIndex = 36;
             this.comboBox2.Text = "0";
             // 
@@ -505,9 +493,10 @@
             "22",
             "23",
             "24"});
-            this.comboBox1.Location = new System.Drawing.Point(101, 68);
+            this.comboBox1.Location = new System.Drawing.Point(76, 55);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(43, 28);
+            this.comboBox1.Size = new System.Drawing.Size(40, 25);
             this.comboBox1.TabIndex = 35;
             this.comboBox1.Text = "0";
             // 
@@ -516,9 +505,10 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label10.ForeColor = System.Drawing.Color.White;
-            this.label10.Location = new System.Drawing.Point(216, 176);
+            this.label10.Location = new System.Drawing.Point(162, 143);
+            this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(20, 22);
+            this.label10.Size = new System.Drawing.Size(16, 18);
             this.label10.TabIndex = 34;
             this.label10.Text = "0";
             // 
@@ -527,9 +517,10 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label9.ForeColor = System.Drawing.Color.White;
-            this.label9.Location = new System.Drawing.Point(193, 176);
+            this.label9.Location = new System.Drawing.Point(145, 143);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(20, 22);
+            this.label9.Size = new System.Drawing.Size(16, 18);
             this.label9.TabIndex = 33;
             this.label9.Text = ":";
             // 
@@ -538,9 +529,10 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label8.ForeColor = System.Drawing.Color.White;
-            this.label8.Location = new System.Drawing.Point(171, 176);
+            this.label8.Location = new System.Drawing.Point(128, 143);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(20, 22);
+            this.label8.Size = new System.Drawing.Size(16, 18);
             this.label8.TabIndex = 32;
             this.label8.Text = "0";
             // 
@@ -549,9 +541,10 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(150, 176);
+            this.label7.Location = new System.Drawing.Point(112, 143);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(20, 22);
+            this.label7.Size = new System.Drawing.Size(16, 18);
             this.label7.TabIndex = 31;
             this.label7.Text = ":";
             // 
@@ -560,9 +553,10 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.label6.ForeColor = System.Drawing.Color.White;
-            this.label6.Location = new System.Drawing.Point(124, 176);
+            this.label6.Location = new System.Drawing.Point(93, 143);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(20, 22);
+            this.label6.Size = new System.Drawing.Size(16, 18);
             this.label6.TabIndex = 30;
             this.label6.Text = "0";
             // 
@@ -573,11 +567,11 @@
             // 
             // Form9
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::smart_helper_.Properties.Resources.rooms_background;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1154, 664);
+            this.ClientSize = new System.Drawing.Size(866, 540);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.button5);
@@ -594,7 +588,6 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form9";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form9";
