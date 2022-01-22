@@ -46,13 +46,6 @@ namespace smart_helper_
             form1.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Form5 form5 = new Form5(userToolStripMenuItem.Text,this);
-            form5.Show();
-        }
-
         private void Form10_Load(object sender, EventArgs e)
         {
             if (all_heat == false)
@@ -242,6 +235,13 @@ namespace smart_helper_
                     panel1.BackgroundImage = Properties.Resources.bathroom_warm;
                 }
             }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form5 form5 = new Form5(userToolStripMenuItem.Text, this);
+            form5.Show();
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)

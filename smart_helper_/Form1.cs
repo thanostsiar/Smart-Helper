@@ -22,26 +22,33 @@ namespace smart_helper_
             String username = textBox1.Text;
             String password = textBox2.Text;
 
-            if (String.IsNullOrWhiteSpace(username) || String.IsNullOrWhiteSpace(password))
+            User user = new User(username, password);
+
+            if (String.IsNullOrWhiteSpace(user.Username) || String.IsNullOrWhiteSpace(user.Password))
             {
-                MessageBox.Show("Please fill all the blanks!");
+                MessageBox.Show("Please fill all the blanks!", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
-                Form2 form2 = new Form2(username);
+                Form2 form2 = new Form2(user.Username);
                 form2.Show();
                 this.Hide();
             }
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
 
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        // The textbox for inserting the username will only accept letters, numbers and the underscore.
+
+        private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         {
-            Application.Exit();
+            if (!(char.IsLetter(e.KeyChar) || char.IsDigit(e.KeyChar) || e.KeyChar.Equals((char)08) || e.KeyChar.Equals((char)95)))
+            {
+                e.Handled = true;
+            }
         }
     }
 }

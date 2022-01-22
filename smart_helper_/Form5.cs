@@ -50,13 +50,6 @@ namespace smart_helper_
             form1.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Form2 form2 = new Form2(userToolStripMenuItem.Text);
-            form2.Show();
-        }
-
         private void pictureBox1_Click(object sender, EventArgs e)
         {
             String selection = toolTip1.GetToolTip(pictureBox1);
@@ -87,6 +80,13 @@ namespace smart_helper_
             Form10 form10 = new Form10(selection, userToolStripMenuItem.Text,this);
             form10.Show();
             this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 form2 = new Form2(userToolStripMenuItem.Text);
+            form2.Show();
         }
     }
 }

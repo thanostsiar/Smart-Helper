@@ -65,16 +65,16 @@ namespace smart_helper_
             form2.Show();
         }
 
-        private void button2_Click_1(object sender, EventArgs e)
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Close();
             Form2 form2 = new Form2(userToolStripMenuItem.Text);
             form2.Show();
-        }
-
-        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

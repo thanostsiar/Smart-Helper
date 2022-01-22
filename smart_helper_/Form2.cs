@@ -74,16 +74,16 @@ namespace smart_helper_
             form1.Show();
         }
 
-        private void button1_Click_1(object sender, EventArgs e)
+        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Close();
             Form1 form1 = new Form1();
             form1.Show();
-        }
-
-        private void exitToolStripMenuItem1_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

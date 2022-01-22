@@ -82,7 +82,7 @@ namespace smart_helper_
             this.Hide();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Close();
             Form2 form2 = new Form2(userToolStripMenuItem.Text);

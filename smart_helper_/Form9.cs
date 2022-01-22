@@ -220,13 +220,6 @@ namespace smart_helper_
 
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Form4 form4 = new Form4(userToolStripMenuItem.Text,this);
-            form4.Show();
-        }
-
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             if (this.Text.Equals("Living Room"))
@@ -319,6 +312,13 @@ namespace smart_helper_
 
             timer1.Enabled = false;
             pictureBox2.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form4 form4 = new Form4(userToolStripMenuItem.Text, this);
+            form4.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
