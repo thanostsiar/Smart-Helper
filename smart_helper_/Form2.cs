@@ -47,7 +47,7 @@ namespace smart_helper_
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
+            Form6 form6 = new Form6(label8.Text);
             form6.Show();
             this.Hide();
         }
