@@ -58,6 +58,18 @@
     <Compile Include="Form10.Designer.cs">
       <DependentUpon>Form10.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form11.Designer.cs">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form12.Designer.cs">
+      <DependentUpon>Form12.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form2.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -114,6 +126,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form10.resx">
       <DependentUpon>Form10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form11.resx">
+      <DependentUpon>Form11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form12.resx">
+      <DependentUpon>Form12.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
@@ -264,7 +282,8 @@
   <ItemGroup>
     <Content Include="kitchen_background.png" />
     <Content Include="Resources\bathroom_background.jpg" />
-    <None Include="Resources\pet_food.png" />
+    <None Include="Resources\night_out.png" />
+    <None Include="Resources\uni-removebg-preview.png" />
     <None Include="Resources\living_room_semi.png" />
     <None Include="Resources\living_room_little.png" />
     <None Include="Resources\bathroom_off.png" />
@@ -278,8 +297,12 @@
     <None Include="Resources\bedroom_semi.png" />
     <None Include="Resources\heating_background.jpg" />
     <None Include="Resources\heat_rooms_background.jpg" />
-    <None Include="Resources\feeder_empty.png" />
-    <None Include="Resources\feeder_full.png" />
+    <None Include="Resources\day_planner_back.png" />
+    <None Include="Resources\day.png" />
+    <None Include="Resources\gym2-removebg-preview.png" />
+    <None Include="Resources\drivers_school.png" />
+    <None Include="Resources\coffee.png" />
+    <None Include="Resources\coffee-removebg-preview.png" />
     <Content Include="Resources\kitchen_background.png" />
     <None Include="Resources\timer.png" />
     <None Include="Resources\lightbulb.png" />

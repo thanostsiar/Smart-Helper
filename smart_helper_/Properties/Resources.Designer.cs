@@ -333,9 +333,49 @@ namespace smart_helper_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap coffee {
+            get {
+                object obj = ResourceManager.GetObject("coffee", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap coffee_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("coffee-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap day {
+            get {
+                object obj = ResourceManager.GetObject("day", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap day_planner {
             get {
                 object obj = ResourceManager.GetObject("day_planner", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap day_planner_back {
+            get {
+                object obj = ResourceManager.GetObject("day_planner_back", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -353,19 +393,9 @@ namespace smart_helper_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap feeder_empty {
+        internal static System.Drawing.Bitmap drivers_school {
             get {
-                object obj = ResourceManager.GetObject("feeder_empty", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap feeder_full {
-            get {
-                object obj = ResourceManager.GetObject("feeder_full", resourceCulture);
+                object obj = ResourceManager.GetObject("drivers_school", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -406,6 +436,16 @@ namespace smart_helper_.Properties {
         internal static System.Drawing.Bitmap formal3 {
             get {
                 object obj = ResourceManager.GetObject("formal3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap gym2_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("gym2-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -653,9 +693,9 @@ namespace smart_helper_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pet_feeder {
+        internal static System.Drawing.Bitmap night_out {
             get {
-                object obj = ResourceManager.GetObject("pet_feeder", resourceCulture);
+                object obj = ResourceManager.GetObject("night_out", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -663,9 +703,9 @@ namespace smart_helper_.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap pet_food {
+        internal static System.Drawing.Bitmap pet_feeder {
             get {
-                object obj = ResourceManager.GetObject("pet_food", resourceCulture);
+                object obj = ResourceManager.GetObject("pet_feeder", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -776,6 +816,16 @@ namespace smart_helper_.Properties {
         internal static System.Drawing.Bitmap tv {
             get {
                 object obj = ResourceManager.GetObject("tv", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap uni_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("uni-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

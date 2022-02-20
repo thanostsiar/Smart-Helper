@@ -47,14 +47,14 @@ namespace smart_helper_
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6(label8.Text);
+            Form6 form6 = new Form6();
             form6.Show();
             this.Hide();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            Form7 form7 = new Form7();
+            Form7 form7 = new Form7(label8.Text);
             form7.Show();
             this.Hide();
         }
