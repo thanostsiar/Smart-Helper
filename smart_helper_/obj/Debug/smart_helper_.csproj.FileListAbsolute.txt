@@ -18,7 +18,6 @@ C:\Users\thana\Dropbox\C#\repos\smart_helper_\obj\Debug\smart_helper_.Form8.reso
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\bin\Debug\smart_helper_.exe.config
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\bin\Debug\smart_helper_.exe
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\bin\Debug\smart_helper_.pdb
-C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.csprojAssemblyReference.cache
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.Form1.resources
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.Form2.resources
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.Form3.resources
@@ -54,3 +53,5 @@ C:\Users\thana\Documents\GitHub\Smart-Helper\smart_helper_\obj\Debug\smart_helpe
 C:\Users\thana\Dropbox\C#\repos\smart_helper_\obj\Debug\smart_helper_.Form9.resources
 C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.Form10.resources
 C:\Users\thana\Dropbox\C#\repos\smart_helper_\obj\Debug\smart_helper_.Form10.resources
+C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.csproj.AssemblyReference.cache
+C:\Users\misia\OneDrive\Υπολογιστής\ergasies\Smart_Helper\Smart-Helper\smart_helper_\obj\Debug\smart_helper_.csproj.SuggestedBindingRedirects.cache

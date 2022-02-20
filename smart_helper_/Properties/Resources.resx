@@ -328,4 +328,13 @@
   <data name="kitchen_warm" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\kitchen_warm1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="feeder_empty" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feeder_empty.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="feeder_full" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\feeder_full.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pet_food" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\pet_food.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>
