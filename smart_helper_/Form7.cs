@@ -58,13 +58,6 @@ namespace smart_helper_
             form11.Show();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Form11 form11 = new Form11(userToolStripMenuItem.Text, "Feed Pet");
-            form11.Show();
-        }
-
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             this.Close();

@@ -282,6 +282,25 @@
   <ItemGroup>
     <Content Include="kitchen_background.png" />
     <Content Include="Resources\bathroom_background.jpg" />
+    <None Include="Resources\pet_food1.png" />
+    <None Include="Resources\feeder_empty1.png" />
+    <None Include="Resources\feeder_full1.png" />
+    <None Include="Resources\papei_car.png" />
+    <None Include="Resources\papei_car2.png" />
+    <None Include="Resources\papei_mesa.png" />
+    <None Include="Resources\gym_car.png" />
+    <None Include="Resources\gym_mesa.png" />
+    <None Include="Resources\gym_podia.png" />
+    <None Include="Resources\papei_mesa1.png" />
+    <None Include="Resources\coffee_car.png" />
+    <None Include="Resources\coffee_mesa.png" />
+    <None Include="Resources\driver_car.png" />
+    <None Include="Resources\driver_mesa.png" />
+    <None Include="Resources\driver_podia.png" />
+    <None Include="Resources\gazi_car.png" />
+    <None Include="Resources\gazi_mesa.png" />
+    <None Include="Resources\driver_car1.png" />
+    <Content Include="Resources\pet_food.png" />
     <None Include="Resources\night_out.png" />
     <None Include="Resources\uni-removebg-preview.png" />
     <None Include="Resources\living_room_semi.png" />
@@ -303,6 +322,8 @@
     <None Include="Resources\drivers_school.png" />
     <None Include="Resources\coffee.png" />
     <None Include="Resources\coffee-removebg-preview.png" />
+    <Content Include="Resources\feeder_empty.png" />
+    <Content Include="Resources\feeder_full.png" />
     <Content Include="Resources\kitchen_background.png" />
     <None Include="Resources\timer.png" />
     <None Include="Resources\lightbulb.png" />
