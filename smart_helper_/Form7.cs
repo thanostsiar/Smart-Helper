@@ -83,5 +83,22 @@ namespace smart_helper_
             Form12 form12 = new Form12();
             form12.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13("Day Planner", "Hover over the pictures of the activities to learn about them and click on them in order to proceed. " +
+                            "In case you want to sign-out, press the 'Sign-Out' button on the top-right next to your username. " +
+                            "If you want to go back a page, click the blue arrow on the top-left. " +
+                            "If you want to exit the day planner and go back to the devices' page, press the button 'Exit Day Planner' on the top-left. " +
+                            "Finally, if you want to exit the application, press the 'Exit' button on the top-left of the form.");
+            form13.Show();
+        }
+
+        private void exitDayPlannerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Form2 form2 = new Form2(userToolStripMenuItem.Text);
+            form2.Show();
+        }
     }
 }

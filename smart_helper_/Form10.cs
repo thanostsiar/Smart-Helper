@@ -244,6 +244,19 @@ namespace smart_helper_
             form5.Show();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13("Smart Heat", "If you want to turn on the room's heating, press the button 'Room Heat'. If you want to turn on the heating for every room, " +
+                            "press the button 'House Heat'. In case you want to alter the temperature of the heating, use the slider with the label 'Adjust Heat'. " +
+                            "You have the capability to set a timer in order for the heating to get turned on automatically. For this to happen, choose the hours, minutes and seconds " +
+                            "through the comboboxes and then press the button 'Activate/Deactivate'. In order to reset the timer, press the button 'Reset'. " +
+                            "In case you want to sign-out, press the 'Sign-Out' button on the top-right next to your username. " +
+                            "If you want to go back a page, click the blue arrow on the top-left. " +
+                            "If you want to exit the smart heat and go back to the devices' page, press the button 'Exit Heat' on the top-left. " +
+                            "Finally, if you want to exit the application, press the 'Exit' button on the top-left of the form.");
+            form13.Show();
+        }
+
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
             if (this.Text.Equals("Living Room"))

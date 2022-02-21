@@ -50,6 +50,7 @@ namespace smart_helper_
             this.transportation = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.coffee = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.route = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -59,7 +60,7 @@ namespace smart_helper_
             // 
             // menuStrip1
             // 
-            this.menuStrip1.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.menuStrip1.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.signOutToolStripMenuItem,
@@ -67,7 +68,7 @@ namespace smart_helper_
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1107, 31);
+            this.menuStrip1.Size = new System.Drawing.Size(1107, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -284,6 +285,21 @@ namespace smart_helper_
             this.route.UseColumnTextForButtonValue = true;
             this.route.Width = 125;
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::smart_helper_.Properties.Resources.questionmark;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button4.Location = new System.Drawing.Point(1032, 34);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 54);
+            this.button4.TabIndex = 42;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -291,6 +307,7 @@ namespace smart_helper_
             this.BackgroundImage = global::smart_helper_.Properties.Resources.day;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1107, 670);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label4);
@@ -337,5 +354,6 @@ namespace smart_helper_
         private System.Windows.Forms.DataGridViewTextBoxColumn transportation;
         private System.Windows.Forms.DataGridViewCheckBoxColumn coffee;
         private System.Windows.Forms.DataGridViewButtonColumn route;
+        private System.Windows.Forms.Button button4;
     }
 }

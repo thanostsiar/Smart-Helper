@@ -88,5 +88,15 @@ namespace smart_helper_
             Form2 form2 = new Form2(userToolStripMenuItem.Text);
             form2.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13("Smart Lights", "Hover over the pictures of the rooms to learn about them and click on them in order to proceed. " +
+                            "In case you want to sign-out, press the 'Sign-Out' button on the top-right next to your username. " +
+                            "If you want to go back a page, click the blue arrow on the top-left. " +
+                            "If you want to exit the smart lights and go back to the devices' page, press the button 'Exit Lights' on the top-left. " +
+                            "Finally, if you want to exit the application, press the 'Exit' button on the top-left of the form.");
+            form13.Show();
+        }
     }
 }

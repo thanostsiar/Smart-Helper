@@ -57,3 +57,4 @@ C:\Users\thana\Dropbox\C#\repos\smart_helper_\obj\Debug\smart_helper_.Form10.res
 C:\Users\thana\Dropbox\C#\repos\smart_helper_\obj\Debug\smart_helper_.Form11.resources
 C:\Users\thana\Dropbox\C#\repos\smart_helper_\obj\Debug\smart_helper_.csproj.SuggestedBindingRedirects.cache
 C:\Users\thana\Dropbox\C#\repos\smart_helper_\obj\Debug\smart_helper_.Form12.resources
+C:\Users\thana\Dropbox\C#\repos\smart_helper_\obj\Debug\smart_helper_.Form13.resources

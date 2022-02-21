@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -49,6 +50,13 @@ namespace smart_helper_
             {
                 e.Handled = true;
             }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13("Sign-In", "This is the Sign-In page. You can input a username and password of your choice and then press the 'Sign-In' button to proceed. " +
+                            "The username should only contain letters, numbers and the underscore. If you want to terminate the application, click the 'Exit' button that is located on the top-right corner of the form.");
+            form13.Show();
         }
     }
 }

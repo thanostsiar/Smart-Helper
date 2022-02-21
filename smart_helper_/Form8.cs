@@ -151,5 +151,16 @@ namespace smart_helper_
             Form3 form3 = new Form3(userToolStripMenuItem.Text);
             form3.Show();
         }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13("Shoes", "Choose a pair of shoes of your choice in the category that you have already chosen. " +
+                            "Click the button 'Show Status' in order to check the status of the smart shoebox. " +
+                            "If no shoes appear, there will be a web page on the right side of the form so you can buy new shoes for this category." +
+                            "In case you want to sign-out, press the 'Sign-Out' button on the top-right next to your username. " +
+                            "If you want to go back a page, click the blue arrow on the top-left. " +
+                            "Finally, if you want to exit the application, press the 'Exit' button on the top-left of the form.");
+            form13.Show();
+        }
     }
 }

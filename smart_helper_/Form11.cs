@@ -72,5 +72,17 @@ namespace smart_helper_
                 form12.Show();
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13("My Day", "After having chosen the activity to add to your day, it's time to proceed. Choose the date and hour that " +
+                            "the activity is going to take place and then select your way of transportation from the combobox. " +
+                            "There is also an option if you want a take away coffee, by choosing 'YES' or 'NO' below. " +
+                            "Finally, press the button 'Submit' in order to add the activity in your day plan. " +
+                            "If you want to go back a page, click the blue arrow on the top - left. " +
+                            "In case you want to sign-out, press the 'Sign-Out' button on the top-right next to your username. " +
+                            "Finally, if you want to exit the application, press the 'Exit' button on the top-left of the form.");
+            form13.Show();
+        }
     }
 }

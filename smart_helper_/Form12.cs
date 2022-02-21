@@ -106,5 +106,13 @@ namespace smart_helper_
                 }
             }
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13("Map", "These are the possible routes to your destination, by the transportation of your choice. " +
+                            "In case you want to sign -out, press the 'Sign-Out' button on the top - right next to your username. " +
+                            "Finally, if you want to exit the application, press the 'Exit' button on the top-left of the form.");
+            form13.Show();
+        }
     }
 }

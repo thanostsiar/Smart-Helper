@@ -47,7 +47,7 @@ namespace smart_helper_
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            Form6 form6 = new Form6();
+            Form6 form6 = new Form6(label8.Text);
             form6.Show();
             this.Hide();
         }
@@ -57,14 +57,6 @@ namespace smart_helper_
             Form7 form7 = new Form7(label8.Text);
             form7.Show();
             this.Hide();
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            Form1 frm = new Form1();
-            frm.Show();
-            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -84,6 +76,15 @@ namespace smart_helper_
             this.Close();
             Form1 form1 = new Form1();
             form1.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13("Devices' Menu", "Hover over the pictures of the smart devices to learn about them and click on them in order to proceed." +
+                            "In case you want to sign-out, press the 'Sign-Out' button on the top-right next to your username. " +
+                            "If you want to go back a page, click the blue arrow on the top-left." +
+                            "Finally, if you want to exit the application, press the 'Exit' button on the top-left of the form.");
+            form13.Show();
         }
     }
 }

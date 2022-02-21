@@ -321,6 +321,20 @@ namespace smart_helper_
             form4.Show();
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Form13 form13 = new Form13("Smart Lights", "If you want to open the room's lights, press the button 'Room Lights'. If you want to open the lights for every room, " +
+                            "press the button 'All Lights'. In case you want to alter the brightness of the lights, use the slider with the label 'Intensity of Lights'. " +
+                            "If you want to change the color of the lights, then press the button 'Change Color'. " +
+                            "You have the capability to set a timer in order for the lights to open automatically. For this to happen, choose the hours, minutes and seconds " +
+                            "through the comboboxes and then press the button 'Activate/Deactivate'. In order to reset the timer, press the button 'Reset'. " +
+                            "In case you want to sign-out, press the 'Sign-Out' button on the top-right next to your username. " +
+                            "If you want to go back a page, click the blue arrow on the top-left. " +
+                            "If you want to exit the smart lights and go back to the devices' page, press the button 'Exit Lights' on the top-left. " +
+                            "Finally, if you want to exit the application, press the 'Exit' button on the top-left of the form.");
+            form13.Show();
+        }
+
         private void button5_Click(object sender, EventArgs e)
         {
             if (pictureBox1.Visible)
