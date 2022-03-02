@@ -40,10 +40,10 @@ namespace smart_helper_
             this.signOutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.userToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitDayPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.exitDayPlannerToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
@@ -171,6 +171,13 @@ namespace smart_helper_
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
+            // exitDayPlannerToolStripMenuItem
+            // 
+            this.exitDayPlannerToolStripMenuItem.Name = "exitDayPlannerToolStripMenuItem";
+            this.exitDayPlannerToolStripMenuItem.Size = new System.Drawing.Size(200, 27);
+            this.exitDayPlannerToolStripMenuItem.Text = "Exit Day Planner";
+            this.exitDayPlannerToolStripMenuItem.Click += new System.EventHandler(this.exitDayPlannerToolStripMenuItem_Click);
+            // 
             // toolTip1
             // 
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
@@ -202,13 +209,6 @@ namespace smart_helper_
             this.button4.TabIndex = 41;
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // exitDayPlannerToolStripMenuItem
-            // 
-            this.exitDayPlannerToolStripMenuItem.Name = "exitDayPlannerToolStripMenuItem";
-            this.exitDayPlannerToolStripMenuItem.Size = new System.Drawing.Size(200, 27);
-            this.exitDayPlannerToolStripMenuItem.Text = "Exit Day Planner";
-            this.exitDayPlannerToolStripMenuItem.Click += new System.EventHandler(this.exitDayPlannerToolStripMenuItem_Click);
             // 
             // Form7
             // 

@@ -18,6 +18,7 @@ namespace smart_helper_
         {
             InitializeComponent();
         }
+
         public Form4(String username)
         {
             InitializeComponent();

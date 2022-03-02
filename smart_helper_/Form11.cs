@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,7 +13,8 @@ namespace smart_helper_
 {
     public partial class Form11 : Form
     {
-        int counter = 0;
+        static List<Day> dayList = new List<Day>();
+
         public Form11()
         {
             InitializeComponent();
@@ -22,6 +24,19 @@ namespace smart_helper_
             InitializeComponent();
             userToolStripMenuItem.Text = username;
             label4.Text = activity;
+        }   
+
+        private void Form11_Load(object sender, EventArgs e)
+        {
+            StringBuilder stringBuilder = new StringBuilder();
+
+            foreach (Day i in dayList)
+            {
+                stringBuilder.Append("Activity: " + i.activity + " Date: " + i.date + " Transportation: " + i.transportation + " Coffee: " + i.coffee);
+                stringBuilder.Append(Environment.NewLine);
+            }
+            richTextBox1.AppendText(stringBuilder.ToString());
+            richTextBox1.AppendText(Environment.NewLine);
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
@@ -39,7 +54,7 @@ namespace smart_helper_
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form7 form7 = new Form7();
+            Form7 form7 = new Form7(userToolStripMenuItem.Text);
             form7.Show();
         }
         private void button1_Click(object sender, EventArgs e)
@@ -50,26 +65,47 @@ namespace smart_helper_
             }
             else
             {
-                counter++;
+                String activity = label4.Text;
+                String date = dateTimePicker1.Text;
+                String transportation = comboBox1.SelectedItem.ToString();
+                bool coffee = radioButton1.Checked;
 
-                if (counter == 2)
+                bool activityExists = File.ReadAllText("day.txt").Contains(activity);
+
+                Day day = new Day(activity, date, transportation, coffee);
+
+                if (activityExists)
                 {
                     MessageBox.Show("You have already made your plans for this activity!", "Warning!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
                 else
                 {
-                    dataGridView1.Rows.Add(label4.Text, dateTimePicker1.Text, comboBox1.SelectedItem.ToString(), radioButton1.Checked, route);
-                }
-            }
-        }
+                    DialogResult dialogResult = MessageBox.Show("Activity saved!");
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dataGridView1.Columns[e.ColumnIndex].Name == "route")
-            {
-                Form12 form12 = new Form12(userToolStripMenuItem.Text, comboBox1.SelectedItem.ToString(), label4.Text);
-                form12.Show();
+                    // When OK is clicked, the activity's info are saved and added in the list and then in the day file.
+                    
+                    if (dialogResult == DialogResult.OK)
+                    {
+                        dayList.Add(day);
+
+                        StreamWriter sw = new StreamWriter("day.txt", true);
+                        try
+                        {
+                            sw.WriteLine("Activity: " + day.activity + " Date: " + day.date + " Transportation: " + day.transportation + " Coffee: " + day.coffee);
+                            sw.WriteLine(Environment.NewLine);
+                        }
+                        catch (Exception x)
+                        {
+                            Console.WriteLine(x.Message);
+                        }
+                        finally
+                        {
+                            sw.Close();
+                        }
+                        MessageBox.Show("Activity saved!");
+                    }
+                }
             }
         }
 
@@ -83,6 +119,19 @@ namespace smart_helper_
                             "In case you want to sign-out, press the 'Sign-Out' button on the top-right next to your username. " +
                             "Finally, if you want to exit the application, press the 'Exit' button on the top-left of the form.");
             form13.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            /*StringBuilder stringBuilder = new StringBuilder();
+
+            foreach (Day i in dayList)
+            {
+                stringBuilder.Append("Activity: " + i.activity + " Date: " + i.date + " Transportation: " + i.transportation + " Coffee: " + i.coffee);
+                stringBuilder.Append(Environment.NewLine);
+            }
+            richTextBox1.AppendText(stringBuilder.ToString());
+            richTextBox1.AppendText(Environment.NewLine);*/
         }
     }
 }
