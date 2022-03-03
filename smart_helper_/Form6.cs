@@ -12,6 +12,7 @@ namespace smart_helper_
 {
     public partial class Form6 : Form
     {
+        int seconds, minutes, hours;
         public Form6()
         {
             InitializeComponent();
@@ -41,33 +42,50 @@ namespace smart_helper_
             form2.Show();
         }
 
-        private void Form6_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void Form6_Shown(object sender, EventArgs e)
         {
+            //Picks a random number from 0 to 100
             Random rand = new Random();
             int random = rand.Next(0, 100);
             if (random > 50)
             {
                 pictureBox2.BackgroundImage = Properties.Resources.pet_food;
                 MessageBox.Show("The pet kicked the food!", "Warning!!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                if(random > 60)
+                {
+                    MessageBox.Show("The pet has eaten all the previous food");
+                    pictureBox1.BackgroundImage = Properties.Resources.feeder_empty;
+                }
+            }
+            else if (random >25)
+            {
+                MessageBox.Show("The pet has eaten half of the previous food");
+                pictureBox1.BackgroundImage = Properties.Resources.feeder_half;
+            }
+            else
+            {
+                MessageBox.Show("The pet did not eat the previous food");
+                pictureBox1.BackgroundImage = Properties.Resources.feeder_full;
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (radioButton1.Checked==true)
+
+            if (timer1.Enabled)
             {
-                pictureBox1.BackgroundImage = Properties.Resources.feeder_empty;
+                timer1.Enabled = false;
             }
-            else 
+            else
             {
-                pictureBox1.BackgroundImage = Properties.Resources.feeder_full;
+                timer1.Enabled = true;
             }
-            
+
+            seconds = Int32.Parse(comboBox3.Text);
+            minutes = Int32.Parse(comboBox2.Text);
+            hours = Int32.Parse(comboBox1.Text);
+
             MessageBox.Show("Schedule for feeder is set!");
         }
 
@@ -75,6 +93,64 @@ namespace smart_helper_
         {
             pictureBox2.Hide();
             MessageBox.Show("Good, you cleaned the mess");
+        }
+
+        
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+            seconds--;
+
+            if (seconds == 0)
+            {
+                if (minutes != 0)
+                {
+                    seconds = 59;
+                    minutes--;
+
+                    if (minutes == 0)
+                    {
+                        if (hours != 0)
+                        {
+                            minutes = 59;
+                            hours--;
+                        }
+                        else if (hours == 0 && seconds == 0)
+                        {
+                            timer1.Enabled = false;
+                            seconds = 0;
+                            minutes = 0;
+                            if (radioButton2.Checked)
+                            {
+                                pictureBox1.BackgroundImage = Properties.Resources.feeder_half;
+                            }
+                            else
+                            {
+                                pictureBox1.BackgroundImage = Properties.Resources.feeder_full;
+                            }
+                            MessageBox.Show("Food dropped");
+                        }
+                    }
+                }
+                else
+                {
+                    timer1.Enabled = false;
+                    seconds = 0;
+                    if (radioButton2.Checked)
+                    {
+                        pictureBox1.BackgroundImage = Properties.Resources.feeder_half;
+                    }
+                    else
+                    {
+                        pictureBox1.BackgroundImage = Properties.Resources.feeder_full;
+                    }
+                    MessageBox.Show("Food dropped");
+
+                }
+                
+            }
+            label5.Text = hours.ToString();
+            label6.Text = minutes.ToString();
+            label8.Text = seconds.ToString();
         }
 
         private void button2_Click(object sender, EventArgs e)
