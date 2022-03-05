@@ -316,6 +316,7 @@
     <None Include="Resources\gazi_car.png" />
     <None Include="Resources\gazi_mesa.png" />
     <None Include="Resources\driver_car1.png" />
+    <None Include="Resources\feeder_full.png" />
     <Content Include="Resources\pet_food.png" />
     <None Include="Resources\night_out.png" />
     <None Include="Resources\uni-removebg-preview.png" />
@@ -339,7 +340,6 @@
     <None Include="Resources\coffee.png" />
     <None Include="Resources\coffee-removebg-preview.png" />
     <Content Include="Resources\feeder_empty.png" />
-    <Content Include="Resources\feeder_full.png" />
     <Content Include="Resources\kitchen_background.png" />
     <None Include="Resources\timer.png" />
     <None Include="Resources\lightbulb.png" />
