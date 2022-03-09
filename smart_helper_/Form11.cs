@@ -14,6 +14,7 @@ namespace smart_helper_
     public partial class Form11 : Form
     {
         static List<Day> dayList = new List<Day>();
+        internal Form7 form7;
 
         public Form11()
         {
@@ -25,19 +26,6 @@ namespace smart_helper_
             userToolStripMenuItem.Text = username;
             label4.Text = activity;
         }   
-
-        private void Form11_Load(object sender, EventArgs e)
-        {
-            StringBuilder stringBuilder = new StringBuilder();
-
-            foreach (Day i in dayList)
-            {
-                stringBuilder.Append("Activity: " + i.activity + " Date: " + i.date + " Transportation: " + i.transportation + " Coffee: " + i.coffee);
-                stringBuilder.Append(Environment.NewLine);
-            }
-            richTextBox1.AppendText(stringBuilder.ToString());
-            richTextBox1.AppendText(Environment.NewLine);
-        }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -54,7 +42,7 @@ namespace smart_helper_
         private void pictureBox6_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form7 form7 = new Form7(userToolStripMenuItem.Text);
+            form7 = new Form7(userToolStripMenuItem.Text, dayList);
             form7.Show();
         }
         private void button1_Click(object sender, EventArgs e)
@@ -69,10 +57,75 @@ namespace smart_helper_
                 String date = dateTimePicker1.Text;
                 String transportation = comboBox1.SelectedItem.ToString();
                 bool coffee = radioButton1.Checked;
+                Image route = null;
+
+                if (activity.Equals("University"))
+                {
+                    if (transportation.Equals("Car"))
+                    {
+                        route = Properties.Resources.papei_car;
+                    }
+                    else if (transportation.Equals("Public Transport"))
+                    {
+                        route = Properties.Resources.papei_mesa;
+                    }
+                }
+                else if (activity.Equals("Gym"))
+                {
+                    if (transportation.Equals("Car"))
+                    {
+                        route = Properties.Resources.gym_car;
+                    }
+                    else if (transportation.Equals("Public Transport"))
+                    {
+                        route = Properties.Resources.gym_mesa;
+                    }
+                    else if (transportation.Equals("On foot"))
+                    {
+                        route = Properties.Resources.gym_podia;
+                    }
+                }
+                else if (activity.Equals("Drivers' School"))
+                {
+                    if (transportation.Equals("Car"))
+                    {
+                        route = Properties.Resources.driver_car;
+                    }
+                    else if (transportation.Equals("Public Transport"))
+                    {
+                        route = Properties.Resources.driver_mesa;
+                    }
+                    else if (transportation.Equals("On foot"))
+                    {
+                        route = Properties.Resources.driver_podia;
+                    }
+                }
+                else if (activity.Equals("Night Out"))
+                {
+                    if (transportation.Equals("Car"))
+                    {
+                        route = Properties.Resources.gazi_car;
+                    }
+                    else if (transportation.Equals("Public Transport"))
+                    {
+                        route = Properties.Resources.gazi_mesa;
+                    }
+                }
+                else if (activity.Equals("Coffee"))
+                {
+                    if (transportation.Equals("Car"))
+                    {
+                        route = Properties.Resources.coffee_car;
+                    }
+                    else if (transportation.Equals("Public Transport"))
+                    {
+                        route = Properties.Resources.coffee_mesa;
+                    }
+                }
 
                 bool activityExists = File.ReadAllText("day.txt").Contains(activity);
 
-                Day day = new Day(activity, date, transportation, coffee);
+                Day day = new Day(activity, date, transportation, coffee, route);
 
                 if (activityExists)
                 {
@@ -92,7 +145,7 @@ namespace smart_helper_
                         StreamWriter sw = new StreamWriter("day.txt", true);
                         try
                         {
-                            sw.WriteLine("Activity: " + day.activity + " Date: " + day.date + " Transportation: " + day.transportation + " Coffee: " + day.coffee);
+                            sw.WriteLine("Activity: " + day.activity + " | " + "Date: " + day.date + " | " +  "Transportation: " + day.transportation + " | " + "Coffee: " + day.coffee + " | " + day.route);
                             sw.WriteLine(Environment.NewLine);
                         }
                         catch (Exception x)
@@ -121,17 +174,12 @@ namespace smart_helper_
             form13.Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void Form11_Load(object sender, EventArgs e)
         {
-            /*StringBuilder stringBuilder = new StringBuilder();
-
-            foreach (Day i in dayList)
+            if (label4.Text.Equals("University") || label4.Text.Equals("Night Out") || label4.Text.Equals("Coffee"))
             {
-                stringBuilder.Append("Activity: " + i.activity + " Date: " + i.date + " Transportation: " + i.transportation + " Coffee: " + i.coffee);
-                stringBuilder.Append(Environment.NewLine);
+                comboBox1.Items.RemoveAt(0);
             }
-            richTextBox1.AppendText(stringBuilder.ToString());
-            richTextBox1.AppendText(Environment.NewLine);*/
         }
     }
 }

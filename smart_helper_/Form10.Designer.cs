@@ -102,8 +102,8 @@
             // eToolStripMenuItem
             // 
             this.eToolStripMenuItem.Name = "eToolStripMenuItem";
-            this.eToolStripMenuItem.Size = new System.Drawing.Size(114, 26);
-            this.eToolStripMenuItem.Text = "Exit Heat";
+            this.eToolStripMenuItem.Size = new System.Drawing.Size(124, 26);
+            this.eToolStripMenuItem.Text = "Exit(Heat)";
             this.eToolStripMenuItem.Click += new System.EventHandler(this.eToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1

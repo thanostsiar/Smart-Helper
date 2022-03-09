@@ -45,12 +45,12 @@ namespace smart_helper_
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.button4 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -119,12 +119,13 @@ namespace smart_helper_
             "Car"});
             this.comboBox1.Location = new System.Drawing.Point(6, 187);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(203, 33);
+            this.comboBox1.Size = new System.Drawing.Size(251, 33);
             this.comboBox1.TabIndex = 5;
             this.comboBox1.Text = "-- select an option --";
             // 
             // groupBox1
             // 
+            this.groupBox1.BackColor = System.Drawing.Color.DarkSalmon;
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.button1);
             this.groupBox1.Controls.Add(this.dateTimePicker1);
@@ -132,9 +133,9 @@ namespace smart_helper_
             this.groupBox1.Controls.Add(this.comboBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 121);
+            this.groupBox1.Location = new System.Drawing.Point(838, 147);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(250, 443);
+            this.groupBox1.Size = new System.Drawing.Size(269, 443);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Pick your options";
@@ -145,7 +146,7 @@ namespace smart_helper_
             this.groupBox2.Controls.Add(this.radioButton1);
             this.groupBox2.Location = new System.Drawing.Point(12, 256);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(207, 83);
+            this.groupBox2.Size = new System.Drawing.Size(245, 83);
             this.groupBox2.TabIndex = 9;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Take Away Coffee";
@@ -178,7 +179,7 @@ namespace smart_helper_
             // 
             this.button1.BackColor = System.Drawing.Color.White;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button1.Location = new System.Drawing.Point(55, 358);
+            this.button1.Location = new System.Drawing.Point(70, 359);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(111, 50);
             this.button1.TabIndex = 7;
@@ -195,14 +196,14 @@ namespace smart_helper_
             this.dateTimePicker1.Location = new System.Drawing.Point(6, 88);
             this.dateTimePicker1.MinDate = new System.DateTime(2022, 1, 1, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(213, 27);
+            this.dateTimePicker1.Size = new System.Drawing.Size(251, 27);
             this.dateTimePicker1.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label4.Location = new System.Drawing.Point(634, 61);
+            this.label4.Location = new System.Drawing.Point(903, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 27);
             this.label4.TabIndex = 8;
@@ -212,7 +213,7 @@ namespace smart_helper_
             // 
             this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox6.Image = global::smart_helper_.Properties.Resources.back_final;
-            this.pictureBox6.Location = new System.Drawing.Point(0, 33);
+            this.pictureBox6.Location = new System.Drawing.Point(3, 2);
             this.pictureBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(59, 55);
@@ -228,7 +229,7 @@ namespace smart_helper_
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button4.Location = new System.Drawing.Point(1032, 34);
+            this.button4.Location = new System.Drawing.Point(1032, 32);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 54);
@@ -236,39 +237,24 @@ namespace smart_helper_
             this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
-            // richTextBox1
+            // panel1
             // 
-            this.richTextBox1.Font = new System.Drawing.Font("Leelawadee UI", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(268, 121);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(827, 443);
-            this.richTextBox1.TabIndex = 43;
-            this.richTextBox1.Text = "";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.White;
-            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button2.Location = new System.Drawing.Point(639, 590);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(111, 50);
-            this.button2.TabIndex = 44;
-            this.button2.Text = "My Day";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.panel1.BackgroundImage = global::smart_helper_.Properties.Resources.day;
+            this.panel1.Controls.Add(this.pictureBox6);
+            this.panel1.Location = new System.Drawing.Point(0, 32);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(832, 637);
+            this.panel1.TabIndex = 43;
             // 
             // Form11
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::smart_helper_.Properties.Resources.day;
+            this.BackColor = System.Drawing.Color.LightSalmon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1107, 670);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
-            this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
@@ -285,6 +271,7 @@ namespace smart_helper_
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -308,7 +295,6 @@ namespace smart_helper_
         private System.Windows.Forms.RadioButton radioButton1;
         private System.Windows.Forms.Button button4;
         internal System.Windows.Forms.Label label4;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Panel panel1;
     }
 }

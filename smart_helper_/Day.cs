@@ -1,24 +1,28 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace smart_helper_
 {
-    internal class Day
+    public class Day
     {
         public String activity { get; }
         public String date { get; }
         public String transportation { get; }
         public bool coffee { get; }
+        public Image route { get; }
 
-        public Day(String activity, String date, String transportation, bool coffee)
+        public Day(String activity, String date, String transportation, bool coffee, Image route)
         {
+            List<Day> days = new List<Day>();
             this.activity = activity;
             this.date = date;
             this.transportation = transportation;
             this.coffee = coffee;
+            this.route = route;
         }
     }
 }

@@ -148,8 +148,8 @@ namespace smart_helper_
             // eToolStripMenuItem
             // 
             this.eToolStripMenuItem.Name = "eToolStripMenuItem";
-            this.eToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
-            this.eToolStripMenuItem.Text = "Exit Shoebox";
+            this.eToolStripMenuItem.Size = new System.Drawing.Size(154, 26);
+            this.eToolStripMenuItem.Text = "Exit(Shoebox)";
             this.eToolStripMenuItem.Click += new System.EventHandler(this.eToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1

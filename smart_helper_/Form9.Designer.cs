@@ -107,8 +107,8 @@
             // eToolStripMenuItem
             // 
             this.eToolStripMenuItem.Name = "eToolStripMenuItem";
-            this.eToolStripMenuItem.Size = new System.Drawing.Size(134, 26);
-            this.eToolStripMenuItem.Text = "Exit Lights";
+            this.eToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
+            this.eToolStripMenuItem.Text = "Exit(Lights)";
             this.eToolStripMenuItem.Click += new System.EventHandler(this.eToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1

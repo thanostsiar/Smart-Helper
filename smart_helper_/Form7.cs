@@ -12,6 +12,8 @@ namespace smart_helper_
 {
     public partial class Form7 : Form
     {
+        static List<Day> dayList = new List<Day>();
+
         public Form7()
         {
             InitializeComponent();
@@ -21,6 +23,12 @@ namespace smart_helper_
         {
             InitializeComponent();
             userToolStripMenuItem.Text = username;
+        }
+        public Form7(String username, List<Day>dayList)
+        {
+            InitializeComponent();
+            userToolStripMenuItem.Text = username;
+            Form7.dayList = dayList;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -79,11 +87,10 @@ namespace smart_helper_
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.Close();
-            Form12 form12 = new Form12();
-            form12.Show();
+            Form14 form14 = new Form14(Form7.dayList);
+            form14.Show();
         }
-
+                                                                                                                                                                                                               
         private void button4_Click(object sender, EventArgs e)
         {
             Form13 form13 = new Form13("Day Planner", "Hover over the pictures of the activities to learn about them and click on them in order to proceed. " +
