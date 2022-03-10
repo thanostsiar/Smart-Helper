@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace smart_helper_
@@ -69,7 +63,7 @@ namespace smart_helper_
         private void pictureBox7_Click(object sender, EventArgs e)
         {
             this.Close();
-            Form11 form11 = new Form11(userToolStripMenuItem.Text, "Coffee");
+            Form11 form11 = new Form11(userToolStripMenuItem.Text, "Take Away Coffee");
             form11.Show();
         }
 
@@ -94,6 +88,7 @@ namespace smart_helper_
         private void button4_Click(object sender, EventArgs e)
         {
             Form13 form13 = new Form13("Day Planner", "Hover over the pictures of the activities to learn about them and click on them in order to proceed. " +
+                            "If you want to see your day's plan, click the 'My Day' button. " +
                             "In case you want to sign-out, press the 'Sign-Out' button on the top-right next to your username. " +
                             "If you want to go back a page, click the blue arrow on the top-left. " +
                             "If you want to exit the day planner and go back to the devices' page, press the button 'Exit Day Planner' on the top-left. " +

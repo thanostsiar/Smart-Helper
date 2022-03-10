@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace smart_helper_
@@ -68,7 +61,7 @@ namespace smart_helper_
                     panel1.BackgroundImage = Properties.Resources.bathroom_background;
                 }
             }
-            else if(all_heat)
+            else if(all_heat == true)
             {
                 pictureBox1.Show();
                 if (this.Text.Equals("Living Room"))

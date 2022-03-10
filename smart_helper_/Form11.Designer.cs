@@ -63,7 +63,7 @@ namespace smart_helper_
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1107, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1114, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -203,7 +203,7 @@ namespace smart_helper_
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Consolas", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.label4.Location = new System.Drawing.Point(903, 99);
+            this.label4.Location = new System.Drawing.Point(903, 96);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(116, 27);
             this.label4.TabIndex = 8;
@@ -229,7 +229,7 @@ namespace smart_helper_
             this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.button4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
-            this.button4.Location = new System.Drawing.Point(1032, 32);
+            this.button4.Location = new System.Drawing.Point(1039, 35);
             this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 54);
@@ -240,6 +240,7 @@ namespace smart_helper_
             // panel1
             // 
             this.panel1.BackgroundImage = global::smart_helper_.Properties.Resources.day;
+            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Location = new System.Drawing.Point(0, 32);
             this.panel1.Name = "panel1";
@@ -252,7 +253,7 @@ namespace smart_helper_
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightSalmon;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1107, 670);
+            this.ClientSize = new System.Drawing.Size(1114, 670);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.label4);
@@ -262,7 +263,7 @@ namespace smart_helper_
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form11";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "My Day";
+            this.Text = "Activity";
             this.Load += new System.EventHandler(this.Form11_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

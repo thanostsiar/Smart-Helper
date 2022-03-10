@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace smart_helper_
@@ -94,7 +87,7 @@ namespace smart_helper_
                     this.BackgroundImage = Properties.Resources.gazi_mesa;
                 }
             }
-            else if (actvt.Equals("Coffee"))
+            else if (actvt.Equals("Take Away Coffee"))
             {
                 if (trans.Equals("Car"))
                 {

@@ -1,12 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
 using System.IO;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace smart_helper_
@@ -111,7 +106,7 @@ namespace smart_helper_
                         route = Properties.Resources.gazi_mesa;
                     }
                 }
-                else if (activity.Equals("Coffee"))
+                else if (activity.Equals("Take Away Coffee"))
                 {
                     if (transportation.Equals("Car"))
                     {
@@ -164,7 +159,7 @@ namespace smart_helper_
 
         private void button4_Click(object sender, EventArgs e)
         {
-            Form13 form13 = new Form13("My Day", "After having chosen the activity to add to your day, it's time to proceed. Choose the date and hour that " +
+            Form13 form13 = new Form13("Activity", "After having chosen the activity to add to your day, it's time to proceed. Choose the date and hour that " +
                             "the activity is going to take place and then select your way of transportation from the combobox. " +
                             "There is also an option if you want a take away coffee, by choosing 'YES' or 'NO' below. " +
                             "Finally, press the button 'Submit' in order to add the activity in your day plan. " +
@@ -176,7 +171,7 @@ namespace smart_helper_
 
         private void Form11_Load(object sender, EventArgs e)
         {
-            if (label4.Text.Equals("University") || label4.Text.Equals("Night Out") || label4.Text.Equals("Coffee"))
+            if (label4.Text.Equals("University") || label4.Text.Equals("Night Out") || label4.Text.Equals("Take Away Coffee"))
             {
                 comboBox1.Items.RemoveAt(0);
             }

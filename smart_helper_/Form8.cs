@@ -1,11 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace smart_helper_
@@ -24,7 +18,7 @@ namespace smart_helper_
             userToolStripMenuItem.Text = username;
         }
 
-        // Method that gets called after a pair of shoes has been clicked and shows his choise.
+        // Method that gets called after a pair of shoes has been clicked and shows the choise.
 
         private void showButton(Button b)
         {

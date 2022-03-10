@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.button4 = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -60,7 +61,7 @@
             this.exitToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1438, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(1056, 30);
             this.menuStrip1.TabIndex = 45;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -91,9 +92,9 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.dataGridView1);
-            this.panel1.Location = new System.Drawing.Point(80, 58);
+            this.panel1.Location = new System.Drawing.Point(61, 74);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1205, 611);
+            this.panel1.Size = new System.Drawing.Size(914, 404);
             this.panel1.TabIndex = 46;
             // 
             // dataGridView1
@@ -106,12 +107,12 @@
             this.transportation,
             this.coffee,
             this.route});
-            this.dataGridView1.Location = new System.Drawing.Point(169, 100);
+            this.dataGridView1.Location = new System.Drawing.Point(106, 68);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(895, 405);
+            this.dataGridView1.Size = new System.Drawing.Size(681, 264);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -179,13 +180,29 @@
             this.pictureBox6.TabStop = false;
             this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Transparent;
+            this.button4.BackgroundImage = global::smart_helper_.Properties.Resources.questionmark;
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button4.Font = new System.Drawing.Font("Consolas", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(161)));
+            this.button4.Location = new System.Drawing.Point(981, 33);
+            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 54);
+            this.button4.TabIndex = 48;
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form14
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Navy;
-            this.ClientSize = new System.Drawing.Size(1438, 681);
+            this.ClientSize = new System.Drawing.Size(1056, 504);
             this.ControlBox = false;
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.menuStrip1);
@@ -219,5 +236,6 @@
         private System.Windows.Forms.DataGridViewImageColumn route;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.Button button4;
     }
 }

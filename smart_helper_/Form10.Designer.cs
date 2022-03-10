@@ -152,7 +152,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pictureBox1.Image = global::smart_helper_.Properties.Resources.heat;
-            this.pictureBox1.Location = new System.Drawing.Point(729, 94);
+            this.pictureBox1.Location = new System.Drawing.Point(740, 62);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(49, 43);

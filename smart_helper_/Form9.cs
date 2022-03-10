@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing.Imaging;
 
 namespace smart_helper_
 {
@@ -51,7 +44,7 @@ namespace smart_helper_
 
         private void Form9_Load(object sender, EventArgs e)
         {
-            if (all_lights==false)
+            if (all_lights == false)
             {
                 pictureBox1.Hide();
                 if (this.Text.Equals("Living Room"))
@@ -71,7 +64,7 @@ namespace smart_helper_
                     panel1.BackgroundImage = Properties.Resources.bathroom_off;
                 }
             }
-            else if (all_lights)
+            else if (all_lights == true)
             {
                 pictureBox1.Show();
                 if (this.Text.Equals("Living Room"))
